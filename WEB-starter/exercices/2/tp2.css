@@ -1,0 +1,58 @@
+body {
+    padding: 0 10px;
+   color: white;
+   
+}
+
+
+header {
+    background-color: blueviolet;
+ 
+    height: 20vh;
+
+}
+
+nav {
+    background-color: yellow;
+   
+    height: 5vh;
+}
+
+main {
+    height: 60vh;
+
+}
+
+footer {
+    height: 15vh;
+    background: darkred;
+
+
+}
+
+.mainHaut {
+   color: gray;
+   font-size: 25px;
+   background: red;
+   height: 30%;
+
+}
+
+.mainBas {
+    height: 70%;
+  
+    
+
+}
+
+.mainBasGauche {
+    height: 100%;
+    background-color: blue;
+    width: 50%;
+}
+
+.mainBasDroite {
+     height: 100%;
+     background-color: green;
+     width: 50%;
+}

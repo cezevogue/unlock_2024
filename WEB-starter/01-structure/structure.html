@@ -1,0 +1,60 @@
+<!DOCTYPE html> <!-- commentaire en html, oriente le navigateur sur le type de document --> 
+<!--   < : chevron ouvrant, > : chevron fermant  < NOM DE LA BALISE HTML >  -->
+<html><!-- balise d'ouverture du code html -->
+
+<!-- une balise html est fermée par cette même balise commencant par / avant le ,nommage 
+  ex:  ouverture-> <html> code html  </html>  <- fermeture    -->
+
+<head><!-- entete de document (cerveau de notre page)-->
+    <meta name="description" content="cette page est une introduction à la structure html"><!-- utilisé pour le référencement, reprend généralement les titre h1 de nos pages ainsi que les mots clés utilisé pour la recherche. sera affiché sur le moteur de recherche en description du site -->
+    <meta name="author" content="césaire desaulle">
+    <meta name="viewport" content="width=device-width, initial-scale=1" /> <!-- balise de compatibilité entre les devices (mobile, tablette, pc) afin d'adapter la zone d'affichage à la taille de l'écran -->
+
+    <title>Structure Html</title>  <!-- Nom de l'onglet affiché dans le navigateur, fait généralement référenche au titre principal h1 de la page (dans un soucis de SEO ) -->
+
+    <link rel="stylesheet" href="style.css"><!-- pour ajouter des feuilles de style en lien avec la page html -->
+    <script src=""></script> <!-- pour ajouter des scripts js , peut être positionné en fin de page avant la fermeture du body-->
+
+</head>
+<body><!-- corps du document : début de la zone d'affichage-->
+   <header><!-- haut de page -->
+    <nav><!-- barre de navigation avec liens cliquables , peut ne pas être dans le header -->
+
+    </nav>
+    
+   </header>
+   <main><!-- balise de contenu principal de la page, unique dans une page -->
+
+    <h1>Titre principal</h1><!-- balise de titre principal, doit être unique dans une page et donc en liens avec le title. est obligatoire pour le référencement et directement scanné par les robots des navigateurs -->
+
+      <section><!-- bloc qui va regrouper tout les contenus en rapport les uns avec les autres, généralement contiennent un titre h2 -->
+        <h2>Titre secondaire</h2><!--  les balises de titre vont de h1 à h6 (du plus grand au plus petit)-->
+
+        <aside><!-- colonne gauche ou droite d'une section ou d'un main -->
+
+        </aside>
+        <article><!-- zone de texte -->
+            <p><!-- paragraphes -->
+
+            </p>
+
+        </article>
+        <div><!-- division, est un container qui peut recevoir tout et n'importe quoi lorsque l'on ne peut relier à une balise logique -->
+
+        </div>
+
+        <span><!-- un élément qui peut regrouper tout et n'importe quoi et qui va s'adapter à la taille du contenu --> 
+
+        </span>
+  
+
+      </section>  
+
+   </main>
+   <footer><!-- zone de bas de page, qui contient généralement les informations secondaires (politique de confidentialité, cgv, copyright, à propos, nous contacter ...)  -->
+
+   </footer>
+    
+</body>
+
+</html>

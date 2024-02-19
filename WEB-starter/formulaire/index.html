@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body class="container mt-5">
+
+    <form action="" method="" enctype="multipart/form-data" ><!-- action est un attribut de la balise form qui a pour but de définir où les saisies du formulaire doivent être traitée. enctype est à utiliser lorsque l'on souhaite traiter des données de saisie ainsi que des données fichier -->
+        <div class="form-group">
+            <label class="form-label" for="email">Email</label><!-- balise pour mettre une légende expliquant l'utilité du champs de formulaire -->
+            <input class="form-control" id="email" type="email" name="email" value="" placeholder="test@test.com" required><!-- le name permet d'identifier le nom du champs de saisie afin de l'associer à sa saisie à la soumission duy formulaire. l'id de l'input doit être le même que le for du label, ils ont pour but de générer un focus sur le champs de formulaire au clic du label. la value permet de préremplir un champs. Le placeholder permet d'afficher un message dans le champs de formulaire pour donner des indications à l'utilisateur. required rend le champs obligatoire avec un message automatisé du navigateur. 
+             type email controle la validité du format de l'adresse mail sinon retourne un message -->
+        </div>
+        <div class="form-group">
+            <label for="pseudo" class="form-label">Pseudo</label>
+            <input type="text" name="pseudo" id="pseudo" class="form-control"><!-- type text accepte tout les caractères à la saisie -->
+        </div>
+        <div class="form-group">
+            <label for="cp" class="form-label">Code postal</label>
+            <input type="number" name="cp" id="cp" class="form-control"><!-- accepte uniquement des entiers -->
+        </div>
+        <div class="form-group">
+            <label for="password" class="form-label">Mot de passe</label>
+            <input type="password" name="password" id="password" class="form-control"><!-- permet de cacher avec des puces la saisie -->
+        </div>
+        <div class="form-group">
+            <label for="file" class="form-label">Photo</label>
+            <input type="file" accept="image/png, image/jpeg, image/jpg" name="file" id="file" class="form-control"><!-- champs d'upload de fichier -->
+        </div>
+        <div class="form-group">
+            <label for="hidden" class="form-label">Champs caché</label>
+            <input type="hidden" name="hidden" value="bdc212" id="hidden" class="form-control"><!-- permet de transiter des informations inhérante à la saisie de l'utilisateur -->
+        </div>
+        <div class="form-group">
+            <label for="reset" class="form-label">Reset</label>
+            <input type="reset"  id="reset" class="form-control"><!-- vide les champs de formulaire déjà saisie. (peu recommandé)-->
+        </div>
+        <div class="form-group">
+            <label for="color" class="form-label">color</label>
+            <input type="color" name="color" id="color" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="date" class="form-label">Date(annee/mois/jour)</label>
+            <input type="date" name="date" id="date" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="time" class="form-label">heure</label>
+            <input type="time" name="time" id="time" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="datetime" class="form-label">date time</label>
+            <input type="datetime-local" name="datetime" id="datetime" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="tel" class="form-label">Téléphone</label>
+            <input type="tel" pattern="^[0-9]{10}$" name="tel" id="tel" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="checbox" class="form-label">checbox</label>
+            <input checked type="checkbox" value="..." name="checbox" id="checbox" class="form-checked">
+        </div><!-- les values sont obligatoires -->
+        <div class="form-group">
+            <label for="radio" class="form-label">radio</label>
+            <input checked type="radio" value="..." name="radio" id="radio" class="form-radio">
+        </div><!-- les values sont obligatoires -->
+        <div class="form-group">
+            <label for="submit" class="form-label">submit</label>
+            <input type="submit" name="submit" id="submit" value="envoyer" class="form-control">
+        </div><!-- les values sont obligatoires -->
+        <div class="form-group">
+            <label for="description" class="form-label">description</label>
+            <textarea name="description" class="form-control"     id="description" cols="30" rows="10">ffffffd</textarea><!--  -->
+        </div>
+        <div class="form-group">
+            <label for="genre" class="form-label">genre</label>
+            <select multiple class="form-select" name="genre" id="genre"><!-- multiple permet de selectionner plusieur options-->
+                <option value="m">homme</option><!--- value obligatoire -->
+                <option selected value="f">femme</option><!--- value obligatoire -->
+                <option value="ng">non genré</option><!--- value obligatoire -->
+            </select>
+        </div>
+    </form>
+
+
+
+
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+</html>
